@@ -70,3 +70,21 @@ Default shortcut : `alt+u`
 ```
 
 The `php_namespace.stop_folders` setting is used for `php_namespace_insert_namespace` command. It defines the folders where the namespace building has to stop.
+
+### PSR-4
+
+> This setting requires the use of the Sublime Text project feature.
+
+In order to have your namespace generated following a PSR-4 convention, add the following entry to your project settings (`Project` > `Edit Project`) :
+
+```
+{
+    …
+    "psr-4":
+    {
+        "src": "Acme\\"
+    }
+}
+```
+
+The scheme follows the one found in a classical `composer.json`.
